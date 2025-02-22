@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarshan Insights</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="site-title">Sudarshan Insights</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Articles</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Biology</a>
+                            <ul>
+                                <li><a href="biology.html">Biology Overview</a></li>
+                                <li><a href="evolution-genetics.html">Evolution & Genetics</a></li>
+                                <li><a href="ecology-environment.html">Ecology & Environment</a></li>
+                                <li><a href="human-biology.html">Human Biology</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="literature.html">Literature</a></li>
+                        <li><a href="essay.html">Essay</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="search-tab"><i class="fas fa-search"></i> Search</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="search-box" class="hidden">
+        <input type="text" id="search-input" placeholder="Search articles..." onkeyup="searchContent()">
+        <button onclick="closeSearch()">✖</button>
+    </div>
+
+    <main>
+        <section id="hero" class="content">
+            <div class="hero-container">
+                <img src="sudarshan1.jpg" alt="Sudarshan Karki" class="profile-photo">
+                <div class="hero-text">
+                    <h1>Sudarshan Karki</h1>
+                    <h2>Aspiring Biologist | Research Enthusiast </h2>
+                    <p>Welcome to <b>Sudarshan Insights</b>, where I share the knowledge I’ve gained across different aspects of Biology. Through this website, I aim to present what I've learned in the form of well-researched articles, with the hope of sparking curiosity and encouraging a deeper understanding of the natural world.</p>
+                    <a href="#articles" class="cta-button">Explore My Work</a>
+                </div>
+            </div>
+            <div class="home-social-links">
+                <a href="https://www.facebook.com/sudar.shan.169405" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/sudarshan.insights" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="https://sudarshanarticlehub.blogspot.com/" target="_blank" class="social-icon"><i class="fab fa-blogger"></i></a>
+            </div>
+        </section>
+
+        <section id="articles" class="content">
+            <h1>Explore Articles on Sudarshan Insights</h1>
+            <div class="articles-container">
+                <div class="article-card" onclick="location.href='biology.html'">
+                    <h2>🔬 Biology</h2>
+                    <p>Explore the latest research, scientific theories, and biological discoveries.</p>
+                </div>
+
+                <div class="article-card" onclick="location.href='literature.html'">
+                    <h2>📖 Literature</h2>
+                    <p>Engage with thought-provoking literary analysis, poetry, and critiques.</p>
+                </div>
+
+                <div class="article-card" onclick="location.href='essay.html'">
+                    <h2>📝 Essays</h2>
+                    <p>Read essays covering diverse topics, from science to philosophy.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/sudar.shan.169405" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/sudarshan.insights" target="_blank" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://sudarshanarticlehub.blogspot.com/" target="_blank" class="social-icon"><i class="fab fa-blogger"></i></a>
+        </div>
+        <p>&copy; 2024 Sudarshan Insights | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
