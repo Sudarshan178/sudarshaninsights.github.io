@@ -1,2 +1,2 @@
 # sudarshaninsights.github.io
-Professional write website for Sudarshan Insights
+Professional writer website for Sudarshan Insights
